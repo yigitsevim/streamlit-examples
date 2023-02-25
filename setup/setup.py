@@ -128,7 +128,7 @@ def main():
     is_git_installed()
     is_pip_installed()
     is_ensurepip_installed()
-    venv_names = ['streamlit_simple',]
+    venv_names = ['streamlit_simple','pytorch_streamlit']
     if platform == 'Windows':
         venv_paths = [r'.\venv\\'+n for n in venv_names]
     elif (platform == 'Linux') | (platform == 'Darwin'):
@@ -137,7 +137,7 @@ def main():
     for venv_path, requirements_path, venv_name in zip(venv_paths, requirements_paths, venv_names):
         create_venv(venv_path, platform, shell, executable)
         install_packages(venv_path, requirements_path, platform, shell, executable)
-        install_ipykernel(venv_path, venv_name, platform, shell, executable)
+        # install_ipykernel(venv_path, venv_name, platform, shell, executable)  # not needed for streamlit
 
 if __name__ == '__main__':
     main()
