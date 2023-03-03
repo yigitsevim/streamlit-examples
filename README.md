@@ -29,3 +29,6 @@ However, even with limited capabilities (compared to a backend and frontend buil
 3. Activate the virtual environment for the app you'd like to run
 4. Run `streamlit run APP-FILE-NAME` from the root (where e.g. `APP-FILE-NAME=./hello_world/streamlit_hello_world.py`). This will start the app locally on your laptop. To stop the app press `ctrl-c` on `Windows` and `Linux`, or `cmd-c` on Mac in the terminal from which you launched the app. 
 5. To serve the app from your own repository, go to [Streamlit Cloud](https://streamlit.io/cloud) and follow the instructions.
+
+## Notes
+* The repository includes two apps, each with its own Python package dependencies. The `Streamlit Cloud` service hosts each app independently, with its own Python environment. For multiple apps within a single repository, `Streamlit Cloud` assigns an environment to an app, based on a `requirements.txt` file that is in the app's folder ([docs](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app/app-dependencies)).
