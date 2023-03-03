@@ -1,3 +1,6 @@
+# taken from: https://github.com/asyaf/fun_mini_projects/blob/master/streamlit_examples/resnet_pretrained.py
+# https://towardsdatascience.com/demo-your-model-with-streamlit-a76011467dfb
+
 import io
 import os
 from PIL import Image
