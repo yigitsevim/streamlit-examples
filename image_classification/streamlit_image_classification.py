@@ -59,6 +59,7 @@ def predict(model, categories, image):
 def main():
     st.title('Pretrained model demo')
     model = load_model()
+    model = model.to(device)
     categories = load_labels()
     image = load_image()
     result = st.button('Run on image')
